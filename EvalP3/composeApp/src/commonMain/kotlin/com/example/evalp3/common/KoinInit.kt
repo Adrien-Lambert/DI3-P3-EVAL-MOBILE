@@ -3,6 +3,7 @@ package com.example.evalp3.common
 import com.example.evalp3.data.databaseModule
 import com.example.evalp3.data.remoteModule
 import com.example.evalp3.data.repositoriesModule
+import com.example.evalp3.ui.uiModule
 import org.koin.core.module.Module
 
 /**
@@ -12,5 +13,6 @@ import org.koin.core.module.Module
 fun sharedModules(): List<Module> = listOf(
     remoteModule,
     databaseModule,
-    repositoriesModule
+    repositoriesModule,
+    uiModule
 )
