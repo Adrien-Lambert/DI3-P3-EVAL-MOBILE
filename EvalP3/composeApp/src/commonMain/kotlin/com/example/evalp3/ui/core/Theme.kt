@@ -1,5 +1,6 @@
 package com.example.evalp3.ui.core
 
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
@@ -43,7 +44,7 @@ private val DarkColors = darkColorScheme(
  */
 @Composable
 fun EvalP3Theme(
-    darkTheme: Boolean = false,
+    darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
     MaterialTheme(
