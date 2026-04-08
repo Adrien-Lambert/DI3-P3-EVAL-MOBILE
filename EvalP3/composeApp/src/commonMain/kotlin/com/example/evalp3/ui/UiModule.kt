@@ -7,5 +7,5 @@ import org.koin.dsl.module
 
 val uiModule = module {
     viewModel { LocationListViewModel(get()) }
-    viewModel { (locationId: Int) -> LocationDetailViewModel(locationId, get()) }
+    viewModel { (locationId: Int) -> LocationDetailViewModel(locationId, get(), get()) }
 }
