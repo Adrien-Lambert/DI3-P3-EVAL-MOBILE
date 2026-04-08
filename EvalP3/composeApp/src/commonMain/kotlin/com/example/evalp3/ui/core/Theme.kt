@@ -35,6 +35,12 @@ private val DarkColors = darkColorScheme(
     onSurface = Color.White
 )
 
+/**
+ * Application theme wrapping Material3 with a Rick and Morty color palette.
+ *
+ * @param darkTheme whether to use the dark color scheme
+ * @param content the composable content to theme
+ */
 @Composable
 fun EvalP3Theme(
     darkTheme: Boolean = false,
